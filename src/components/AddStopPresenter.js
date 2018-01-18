@@ -15,7 +15,6 @@ export default class AddStopPresenter extends React.Component {
 
     handleChange(event) {
         const name = event.target.name;
-
         this.setState({
             [name]: event.target.value,
         });
@@ -39,22 +38,6 @@ export default class AddStopPresenter extends React.Component {
             </label><br/>
             <input type="submit" value="Submit"/>
         </form>;
-    }
-
-    postStop() {
-        fetch('https://safe-beyond-32236.herokuapp.com/stop', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                x: 5.5,
-                y: 6.0,
-                name: "zack t react-ey"
-            })
-        });
-
     }
 
 }
