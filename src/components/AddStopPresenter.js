@@ -17,6 +17,7 @@ export default class AddStopPresenter extends React.Component {
         const name = event.target.name;
         this.setState({
             [name]: event.target.value,
+            name: ""
         });
     }
 
@@ -27,9 +28,6 @@ export default class AddStopPresenter extends React.Component {
 
     render() {
         return <form onSubmit={this.handleSubmit}>
-            <label>Name:
-                <input name="name" type="text" value={this.state.name} onChange={this.handleChange}/>
-            </label><br/>
             <label>X:
                 <input name="x" type="number" value={this.state.x} onChange={this.handleChange}/>
             </label><br/>
