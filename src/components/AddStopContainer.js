@@ -23,7 +23,7 @@ export default class AddStopContainer extends React.Component {
         }).then((response) => {
             return response.json();
         }).then((responseJson) => {
-            alert("response" + JSON.stringify(responseJson));
+            this.props.handleStopCreated();
         }).catch((err) => {
             alert("error: " + err);
         });
