@@ -13,6 +13,10 @@ export default class AddStopContainer extends React.Component {
     }
 
     postStop(stop) {
+        if (stop.x > 300 || stop.y > 300 || stop.x < 0 || stop.y < 0) {
+            alert('x and y must be >= 0 and < 300');
+            return;
+        }
         fetch('https://safe-beyond-32236.herokuapp.com/stop', {
             method: 'POST',
             headers: {
