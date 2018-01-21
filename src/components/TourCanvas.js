@@ -27,6 +27,7 @@ export default class TourCanvas extends React.Component {
         return <div>
             <canvas ref="canvas" width={300} height={300} />
             <p>Tour Distance: {this.props.totalDistance}</p>
+            <p>Number of Stops: {this.props.stops.length}</p>
         </div>
     }
 
