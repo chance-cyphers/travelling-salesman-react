@@ -3,10 +3,6 @@ import {RingLoader} from "react-spinners";
 
 export default class TourCanvas extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidUpdate() {
         let stops = this.props.stops;
         if(stops.length < 1) return;
