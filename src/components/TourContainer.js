@@ -61,12 +61,6 @@ export default class TourContainer extends React.Component {
         }).catch(this.displayError);
     }
 
-    testWebsocket() {
-        fetch('https://safe-beyond-32236.herokuapp.com/stop/test', {
-            method: 'GET'
-        }).catch(this.displayError);
-    }
-
     render() {
         return <div>
             <TourCanvas
