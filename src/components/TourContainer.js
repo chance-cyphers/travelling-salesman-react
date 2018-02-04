@@ -69,8 +69,6 @@ export default class TourContainer extends React.Component {
                 isLoading={this.state.isLoadingTour}/>
             <AddStopContainer />
             <button onClick={this.clearStops} >Clear</button>
-            <br />
-            <button onClick={this.testWebsocket} >Test</button>
         </div>
     }
 
