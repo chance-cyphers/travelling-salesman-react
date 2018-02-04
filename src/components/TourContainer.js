@@ -15,7 +15,6 @@ export default class TourContainer extends React.Component {
         };
         this.fetchTour = this.fetchTour.bind(this);
         this.clearStops = this.clearStops.bind(this);
-        this.testWebsocket = this.testWebsocket.bind(this);
     }
 
     componentDidMount() {
